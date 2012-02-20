@@ -1,0 +1,24 @@
+<table id="report-card" cellspacing="0" cellpadding="0">
+<% @courses.each do |course| %>
+
+<tr>
+<td class="grade"><%= course.grade %></td>
+<td>
+<h4><%= course.name %></h4>
+<p><%= course.description %></p></td>
+<td>ID: <%= course.report_ID %></td>
+<td class="meta">
+<p><%= link_to 'Show', course %></p>
+<p><%= link_to 'Edit', edit_course_path(course) %></p>
+<p><%= link_to 'Destroy', course, confirm: 'Are you sure?', method: :delete %></p>
+</td>
+</tr>
+
+
+
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Course', new_course_path %>

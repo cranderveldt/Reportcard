@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<table id="report-card" cellspacing="0" cellpadding="0">
+<tr>
+<td class="grade"><%= @course.grade %></td>
+<td>
+<h4><%= @course.name %></h4>
+<p><%= @course.description %></p></td>
+<td><p>ID: <%= @course.report_ID %></p></td>
+<td class="meta">
+<p><%= link_to 'Edit', edit_course_path(@course) %></p>
+<p><%= link_to 'Back', courses_path %></p>
+</td>
+</tr></table>

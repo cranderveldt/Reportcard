@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrgyle Report Card Application v0.0.2</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div id="header">
+		<div class="head-wrap">
+			<h1 id="logo"><a href="/">Arrgyle</a></h1>
+			<h2 id="subtitle">Exceed your business goals with technology made simple</h2>
+		</div>
+	</div>
+<div id="wrapper" class="group">
+  <div id="main" class="group">
+    <div id="page">
+      <div class="post">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer" class="group">
+<div class="left">&copy; 2012 Arrgyle. All rights reserved.</div>
+<div class="right"><a class="twitter" href="https://twitter.com/#!/wearrgyle">&nbsp;</a>
+<a class="facebook" href="http://www.facebook.com/pages/Arrgyle/301059879926922">&nbsp;</a>
+<a class="email" href="http://arrgyle.com/contact/">&nbsp;</a>
+<a class="phone"  href="http://arrgyle.com/wp-content/themes/arrgyle/images/phonenumber.jpg" rel="lightbox[2|phone]">&nbsp;</a></div>
+</div>
+</body>
+</html>
