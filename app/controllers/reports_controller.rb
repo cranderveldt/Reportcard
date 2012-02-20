@@ -46,9 +46,6 @@ class ReportsController < ApplicationController
       if @report.save
         format.html { redirect_to @report, notice: 'Report was successfully created.' }
         format.json { render json: @report, status: :created, location: @report }
-        for (i = 0; i<10; i++)
-          @course = Courses.new(params[:course])
-        end
       else
         format.html { render action: "new" }
         format.json { render json: @report.errors, status: :unprocessable_entity }
